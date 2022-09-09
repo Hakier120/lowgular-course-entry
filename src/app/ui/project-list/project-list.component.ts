@@ -13,4 +13,5 @@ export class ProjectListComponent {
   constructor(private _projectService: ProjectService) {
   }
   data$: Observable<ProjectModel[] | null> = this._projectService.getAll()
+
 }
