@@ -1,5 +1,5 @@
-<form [formGroup]="employeeForm">
+<form [formGroup]="employeeForm" (ngSubmit)="onEmployeeFormSubmitted(employeeForm)">
   <input type="text" formControlName="name" placeholder="Name">
-  <input type="number" formControlName="age" placeholder="Age">
+  <input type="text" formControlName="age" placeholder="Age">
   <input type="submit" value="Submit">
 </form>
