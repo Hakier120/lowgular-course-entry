@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-employee-form',
@@ -8,5 +8,8 @@ import { FormControl, FormGroup } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EmployeeFormComponent {
-  readonly employeeForm: FormGroup = new FormGroup({ name: text: new FormControl(), age: number: new FormControl() });
+  readonly employeeForm: FormGroup = new FormGroup({name: new FormControl(), age: new FormControl()});
+
+  onEmployeeFormSubmitted(employeeForm: FormGroup): void {
+  }
 }
