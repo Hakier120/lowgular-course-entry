@@ -3,6 +3,6 @@
   <input type="text" formControlName="age" placeholder="Age">
   <input type="text" formControlName="salary" placeholder="Salary">
   <input type="submit" [disabled]="employeeForm.invalid" value="Submit">
-
 </form>
+Your new employee:{{ employeeForm.value.name }}
 
