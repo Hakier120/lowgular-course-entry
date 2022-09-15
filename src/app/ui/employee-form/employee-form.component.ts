@@ -9,7 +9,7 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class EmployeeFormComponent {
   readonly employeeForm: FormGroup = new FormGroup({
-    name: new FormControl(),
+    name: new FormControl('Mateusz'),
     age: new FormControl(18)
   });
 
