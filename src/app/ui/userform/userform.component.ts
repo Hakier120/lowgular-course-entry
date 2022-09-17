@@ -14,7 +14,7 @@ export class UserformComponent {
     salary: new FormControl()
   });
 
-  onButtonclicked() {
-    alert('User was successfully added to the database')
+  onButtonclicked(form: { email: string, age: string, salary: string }) {
+    alert('User was successfully added to the database. ' + 'Email: ' + form.email + ', Age: ' + form.age + ', Salary: ' + form.salary)
   }
 }
