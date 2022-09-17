@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {FormControl, FormGroup, Validator, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-employee-form',
@@ -14,6 +14,10 @@ export class EmployeeFormComponent {
     salary: new FormControl(null, [Validators.min(0), Validators.minLength(2)]),
 
   });
-  
+
+  onButtonClicked() {
+    alert('User was successfully added to the database')
+  }
+
 
 }
