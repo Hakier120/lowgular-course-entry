@@ -15,9 +15,5 @@ export class EmployeeFormComponent {
 
   });
 
-  onButtonClicked() {
-    alert('User was successfully added to the database')
-  }
-
 
 }
