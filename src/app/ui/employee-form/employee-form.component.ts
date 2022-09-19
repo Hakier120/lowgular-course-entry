@@ -25,7 +25,8 @@ export class EmployeeFormComponent {
   onFormSubmitted(form: CreateEmployeeModel) {
     this._employeeService.Create({name: form.name, age: form.age, salary: form.salary}).subscribe(
       (response) => {
-        console.log(alert("User was succesfully added to the database."))
+
+        console.log(alert("User was succesfully added to the database. Email: "))
       }
     );
 
