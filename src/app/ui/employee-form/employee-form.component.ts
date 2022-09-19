@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validator, Validators} from '@angular/forms';
 import {EmployeeService} from '../../services/employee.service';
 import {CreateEmployeeModel} from '../../model/create-employee.model';
 
+
 @Component({
   selector: 'app-employee-form',
   templateUrl: './employee-form.component.html',
@@ -17,12 +18,15 @@ export class EmployeeFormComponent {
 
   });
 
+
   constructor(private _employeeService: EmployeeService) {
   }
 
   onFormSubmitted(form: CreateEmployeeModel) {
     this._employeeService.Create({name: form.name, age: form.age, salary: form.salary}).subscribe(
-
+      (response) => {
+        console.log(alert("User was succesfully added to the database."))
+      }
     );
 
   }
