@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {FormControl, FormGroup, Validator, Validators} from '@angular/forms';
 import {EmployeeService} from '../../services/employee.service';
 import {CreateEmployeeModel} from '../../model/create-employee.model';
 
@@ -21,7 +21,9 @@ export class EmployeeFormComponent {
   }
 
   onFormSubmitted(form: CreateEmployeeModel) {
-    this._employeeService.Create({name: form.name, age: form.age, salary: form.salary}).subscribe();
+    this._employeeService.Create({name: form.name, age: form.age, salary: form.salary}).subscribe(
+
+    );
 
   }
 
