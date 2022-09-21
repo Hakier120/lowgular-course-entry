@@ -11,7 +11,9 @@ export class EmployeeService {
   }
 
   getAll(): Observable<PersonModel[]> {
-    return this._httpClient.get<PersonModel[]>('assets/data/people.json')
+    return this._httpClient.get(undefined,).pipe(
+      map((arrayBuffer: ArrayBuffer): PersonModel[] => undefined));
+
   }
 
   Create(employee: CreateEmployeeModel): Observable<void> {
