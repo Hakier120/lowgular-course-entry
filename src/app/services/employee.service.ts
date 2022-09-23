@@ -25,7 +25,7 @@ export class EmployeeService {
 
 
   getAll(): Observable<PersonModel[]> {
-    return this._httpClient.get<ApiResponse<EmployeeResponse[]>>('https://dummy.restapiexample.com/api/v1/').pipe(
+    return this._httpClient.get<ApiResponse<EmployeeResponse[]>>('https://dummy.restapiexample.com/api/v1/employees').pipe(
       map((response: ApiResponse<EmployeeResponse[]>): PersonModel[] => {
         return response.data.map((employeeResponse: EmployeeResponse) => {
           return {
