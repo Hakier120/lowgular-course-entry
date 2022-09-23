@@ -6,11 +6,24 @@ import {PersonModel} from '../model/person.model';
 import {CreateEmployeeModel} from '../model/create-employee.model';
 import {ApiResponse} from "./api.response";
 
+
+export interface EmployeeResponse {
+
+  id: string;
+  employee_name: string;
+  employee_salary: string;
+  employee_age: string;
+  profile_image: string;
+
+}
+
+
 @Injectable()
 export class EmployeeService {
   constructor(private _httpClient: HttpClient) {
   }
-   
+
+
   getAll(): Observable<PersonModel[]> {
     return this._httpClient.get<ApiResponse<EmployeeResponse[]>>('https://dummy.restapiexample.com/api/v1/').pipe(
       map((response: ApiResponse<EmployeeResponse[]>): PersonModel[] => {
