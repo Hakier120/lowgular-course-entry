@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {map, Observable} from "rxjs";
 import {PersonModel} from "../model/person.model";
 import {ApiResponse} from "./api.response";
+import {CreateEmployeeModel} from "../model/create-employee.model";
 
 
 export interface EmployeeResponse {
@@ -36,6 +37,11 @@ export class EmployeeService {
 
   delete(id: string): Observable<void> {
     return this._httpClient.delete('https://dummy.restapiexample.com/api/v1/delete/' + id).pipe(map(() => void 0))
+
+  }
+
+  Create(employee: CreateEmployeeModel): Observable<void> {
+    return this._httpClient.post('https://dummy.restapiexample.com/api/v1/create', employee).pipe(map(() => void 0));
   }
 }
 
