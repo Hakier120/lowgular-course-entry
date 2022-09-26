@@ -19,16 +19,7 @@ import {UserformComponentModule} from "./ui/userform/userform.component-module";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    EmployeeListComponentModule,
-    EmployeeServiceModule,
-    ServiceArchServiceModule,
-    EmployeeFacesComponentModule,
-    ProjectServiceModule,
-    ProjectListComponentModule,
-    EmployeeFormComponentModule,
-    UserformComponentModule,
-
-
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
