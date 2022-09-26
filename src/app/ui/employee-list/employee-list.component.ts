@@ -1,5 +1,8 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { EmployeeService } from '../../services/employee.service';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {EmployeeService} from '../../services/employee.service';
+import {Observable} from "rxjs";
+import {PersonModel} from "../../model/person.model";
+
 
 @Component({
   selector: 'app-employee-list',
@@ -10,4 +13,6 @@ import { EmployeeService } from '../../services/employee.service';
 export class EmployeeListComponent {
   constructor(private _employeeService: EmployeeService) {
   }
+
+  data$: Observable<PersonModel[] | null> = this._employeeService.getAll()
 }
