@@ -15,4 +15,8 @@ export class EmployeeListComponent {
   }
 
   data$: Observable<PersonModel[] | null> = this._employeeService.getAll()
+
+  delete(id: string): Observable<void> {
+    return this._employeeService.delete(id)
+  }
 }
