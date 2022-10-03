@@ -3,9 +3,30 @@ body {
 }
 
 .title {
-  padding: 90px;
   color: white;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
 
 }
+
+.tytuł {
+  text-align: center;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.divtitle {
+  background-color: tomato;
+  margin: auto;
+}
+
+.footer {
+  padding: 20px;
+  text-align: left;
+}
+
 
 /* You can add global styles to this file, and also import other style files */
