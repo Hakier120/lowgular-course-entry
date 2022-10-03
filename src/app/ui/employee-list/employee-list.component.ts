@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
 import {EmployeeService} from '../../services/employee.service';
-import {Observable} from "rxjs";
+import {Observable,} from "rxjs";
 import {PersonModel} from "../../model/person.model";
 
 
@@ -18,5 +18,7 @@ export class EmployeeListComponent {
 
   delete(id: string): Observable<void> {
     return this._employeeService.delete(id)
+
+
   }
 }

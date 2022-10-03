@@ -19,6 +19,6 @@ export class UserformComponent {
   }
 
   OnButtonClicked(form: { email: string, age: string, name: string }) {
-    alert('User was succesfully added to the database.' + 'Email: ' + form.email + 'Age' + form.age + 'Name' + form.name)
+    alert('User was succesfully added to the database.' + ' Email: ' + form.email + 'Age' + form.age + 'Name' + form.name)
   }
 }
