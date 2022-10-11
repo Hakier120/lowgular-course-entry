@@ -1,10 +1,17 @@
 <div class="divtitle">
   <h1 class="title">Employee List</h1>
 </div>
-<div *ngIf="data$|async as employees">
-  <ul>
-    <li *ngFor="let employee of employees">{{ employee.id }}: {{ employee.name }}
-      <button (click)="delete(employee.personalNumber)">Remove me</button>
-    </li>
-  </ul>
+<div class="d-flex justify-content-between">
+  <div>
+
+    <div *ngIf="data$|async as employees">
+      <ul>
+        <li *ngFor="let employee of employees">{{ employee.id }}: {{ employee.name }}
+          <button class="b-hover" (click)="delete(employee.personalNumber)">Remove me</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div><img class="img-moje" src="assets/bebe.jpg">
+  </div>
 </div>
