@@ -1,11 +1,15 @@
 <h2 class="tytuł">Add new employee here!</h2>
 <br>
 <br>
-<form [formGroup]="userForm" (ngSubmit)="OnButtonClicked(userForm.value)">
-  <input type="text" FormControlName="email" placeholder="Email">
-  <input type="text" FormControlName="age" placeholder="Age">
-  <input type="text" FormControlName="name" placeholder="Name">
-  <input type="submit" [disabled]="userForm.invalid" value="Submit">
+<div class="position-relative">
+  <div class="position-absolute bottom-0 start-50 translate-middle-x">
+    <form [formGroup]="userForm" (ngSubmit)="OnButtonClicked(userForm.value)">
+      <input type="text" FormControlName="email" placeholder="Email">
+      <input type="text" FormControlName="age" placeholder="Age">
+      <input type="text" FormControlName="name" placeholder="Name">
+      <input type="submit" [disabled]="userForm.invalid" value="Submit">
 
-</form>
+    </form>
+  </div>
+</div>
 <footer class="footer">Po zatwierdzeniu pracownik zostanie dodany</footer>
