@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,4 +8,3 @@ import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/co
 })
 export class HomeComponent {
 }
-
