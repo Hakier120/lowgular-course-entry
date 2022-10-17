@@ -77,14 +77,42 @@ body {
 
 .footimg {
   padding: 5px;
-  height: 50px;
-  width: 60px;
+  height: 110px;
+  width: 250px;
 }
 
 .github {
-  padding: 5px;
+
   height: 50px;
   width: 80px;
 }
+
+.footlogo {
+  color: white;
+  font-size: x-large;
+
+
+}
+
+.author {
+  color: white;
+  font-size: x-large;
+}
+
+.rok {
+  font-size: x-large;
+  color: lightblue;
+
+}
+
+.navbar-nav {
+  background-color: goldenrod;
+}
+
+.year {
+  padding: 80px;
+  height: 20px;
+}
+
 
 /* You can add global styles to this file, and also import other style files */
