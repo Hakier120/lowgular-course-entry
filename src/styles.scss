@@ -19,7 +19,7 @@ body {
 }
 
 .divtitle {
-  background-color: darkslateblue;
+
   margin: auto;
 }
 
@@ -64,6 +64,27 @@ body {
 .col {
   background-color: darkslateblue;
   font-size: 15px;
+}
+
+.footercontainer {
+  background-color: darkslateblue;
+}
+
+.employee {
+
+  padding: 20px;
+}
+
+.footimg {
+  padding: 5px;
+  height: 50px;
+  width: 60px;
+}
+
+.github {
+  padding: 5px;
+  height: 50px;
+  width: 80px;
 }
 
 /* You can add global styles to this file, and also import other style files */
