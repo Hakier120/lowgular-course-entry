@@ -2,34 +2,19 @@
   <h1 class="title">Employee List</h1>
 </div>
 <div class="d-flex justify-content-between">
-
   <div>
-
     <div *ngIf="data$|async as employees">
       <ul>
         <li *ngFor="let employee of employees">{{ employee.id }}: {{ employee.name }}
           <button class="b-hover" (click)="delete(employee.personalNumber)">Remove me</button>
+          <button [routerLink]="'/employee-details/'+employee.id+'/'+employee.name">Details</button>
         </li>
       </ul>
     </div>
-
     <img class="angular" src="assets/angularlogo.png">
     <img class="ts" src="assets/ts.png">
     <img class="lowgularlogo" src="assets/pluginIcon.png">
     <img class="javalogo" src="assets/JavaScript-Logo.png">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col order-last">
-          This is test APP!
-        </div>
-        <div class="col">
-          This is test APP!
-        </div>
-        <div class="col order-first">
-          This is test APP!
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="opacity-50"><img class="img-moje" src="assets/bebe.jpg" class="rounded-pill">
