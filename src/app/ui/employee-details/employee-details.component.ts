@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {Observable} from "rxjs";
 import {EmployeeDetailsParamsModel} from "../../model/employee-details-params.model";
 
+
 @Component({
   selector: 'app-employee-details',
   templateUrl: './employee-details.component.html',
