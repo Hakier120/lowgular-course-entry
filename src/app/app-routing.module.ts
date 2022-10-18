@@ -12,7 +12,7 @@ import {EmployeeDetailsComponentModule} from './ui/employee-details/employee-det
 
 const routes: Routes = [{path: 'employee-list', component: EmployeeListComponent},
   {path: 'create-employee', component: UserformComponent},
-  {path: '', component: HomeComponent}, {path: 'employee-details/:id', component: EmployeeDetailsComponent}]
+  {path: '', component: HomeComponent}, {path: 'employee-details/:id/:name', component: EmployeeDetailsComponent}]
 
 
 @NgModule({
