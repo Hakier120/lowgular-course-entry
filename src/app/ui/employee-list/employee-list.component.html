@@ -7,7 +7,7 @@
       <ul>
         <li *ngFor="let employee of employees">{{ employee.id }}: {{ employee.name }}
           <button class="b-hover" (click)="delete(employee.personalNumber)">Remove me</button>
-          <button [routerLink]="'/employee-details/'+employee.id+'/'+employee.name">Details</button>
+          <button class="bb-hover" [routerLink]="'/employee-details/'+employee.id+'/'+employee.name">Details</button>
         </li>
       </ul>
     </div>
