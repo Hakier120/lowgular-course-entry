@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { PersonModel } from '../model/person.model';
-import { ApiResponse } from './api.response';
-import { CreateEmployeeModel } from '../model/create-employee.model';
-import { EmployeeModel } from '../model/employee.model';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {PersonModel} from '../model/person.model';
+import {ApiResponse} from './api.response';
+import {CreateEmployeeModel} from '../model/create-employee.model';
+import {EmployeeModel} from '../model/employee.model';
 
 export interface EmployeeResponse {
   id: string;
@@ -46,6 +46,15 @@ export class EmployeeService {
   }
 
   getOne(id: string): Observable<EmployeeModel> {
+    return this._httpClient.get<ApiResponse<EmployeeResponse>>(`https://dummy.restapiexample.com/api/v1/employee/${id}`).pipe(
+      map((response): EmployeeModel => ({
+        id: response.data.id,
+        image: response.data.profile_image,
+        email: '',
+        name: response.data.employee_name,
+      }))
+    )
+
   }
 }
 
