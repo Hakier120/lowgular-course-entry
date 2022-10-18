@@ -10,7 +10,7 @@ import {EmployeeDetailsParamsModel} from "../../model/employee-details-params.mo
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EmployeeDetailsComponent {
-  readonly params$: Observable<EmployeeDetailsParamsModel> = this._activatedRoute.params;
+  readonly params$: Observable<EmployeeDetailsParamsModel> = this._activatedRoute.params as Observable<EmployeeDetailsParamsModel>;
 
   constructor(private _activatedRoute: ActivatedRoute) {
   }
