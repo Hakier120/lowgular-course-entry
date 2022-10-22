@@ -8,6 +8,7 @@ import {EmployeeListComponentModule} from "./ui/employee-list/employee-list.comp
 import {EmployeeServiceModule} from "./services/employee.service-module";
 import {UserformComponentModule} from "./ui/userform/userform.component-module";
 import {AboutmeComponentModule} from "./ui/aboutme/aboutme.component-module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import {AboutmeComponentModule} from "./ui/aboutme/aboutme.component-module";
     EmployeeListComponentModule,
     EmployeeServiceModule,
     UserformComponentModule,
-    AboutmeComponentModule
+    AboutmeComponentModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
