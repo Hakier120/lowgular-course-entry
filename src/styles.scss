@@ -67,7 +67,7 @@ body {
 }
 
 .footercontainer {
-  background-color: darkslateblue;
+  background-color: grey;
 }
 
 .employee {
@@ -106,7 +106,16 @@ body {
 }
 
 .navbar-nav {
-  background-color: white;
+  background-color: darkgoldenrod;
+}
+
+.navbar-brand {
+  color: white;
+  font-family: "Century Gothic";
+}
+
+.navbar-brand:hover {
+  color: goldenrod;
 }
 
 .year {
@@ -130,7 +139,7 @@ body {
 }
 
 .homejpg {
-  height: 500px;
+  height: 580px;
   width: 700px;
 }
 
@@ -144,6 +153,10 @@ body {
 
 .hometitle {
   color: white;
+  padding: 20px;
+  font-size: xxx-large;
+  font-family: Algerian;
 }
+
 
 /* You can add global styles to this file, and also import other style files */
