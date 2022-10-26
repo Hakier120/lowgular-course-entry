@@ -13,7 +13,7 @@ name: {{ (params$ | async)?.name}}
       <div class="card">
         <div class="card-block">
           <h3 class="card-title">ID</h3>
-          <p></p>
+          <p>{{ (params$ | async)?.id}}</p>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@ name: {{ (params$ | async)?.name}}
       <div class="card">
         <div class="card-block">
           <h3 class="card-title">Name</h3>
-          <p></p>
+          <p>{{ (params$ | async)?.name}}</p>
         </div>
       </div>
     </div>
